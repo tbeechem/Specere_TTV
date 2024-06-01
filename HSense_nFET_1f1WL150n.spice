@@ -1,0 +1,18 @@
+** sch_path: /home/parallels/Specere_TTV/xschem/HSense_nFET_1f1WL150n.sch
+.subckt HSense_nFET_1f1WL150n Vgateh VDh Vgateh VDh VDs Vgates
+*.PININFO Vgateh:B VDh:B Vgateh:B VDh:B VDs:B Vgates:B
+x1 VDh Vgateh nFET_1f1WL150n
+x2 VDh Vgateh nFET_1f1WL150n
+x3 VDs Vgates nFET_1f1WL150n
+.ends
+
+* expanding   symbol:  nFET_1f1WL150n.sym # of pins=2
+** sym_path: /home/parallels/Specere_TTV/xschem/nFET_1f1WL150n.sym
+** sch_path: /home/parallels/Specere_TTV/xschem/nFET_1f1WL150n.sch
+.subckt nFET_1f1WL150n Vin Vgate
+*.PININFO Vgate:B Vin:B
+XM1 Vin Vgate GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+.ends
+
+.GLOBAL GND
+.end
